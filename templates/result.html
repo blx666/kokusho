@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+    {% load static %}
+    <link type='text/css'  rel="stylesheet" href="{% static 'css/index.css' %}"/>
+</head>
+<body>
+
+<div class='box'>
+     <h1> {{ user.username }} students score</h1>
+    <table class="score_content" align="center">
+    {% if score_url %}
+        {% for score in score_url %}
+            <tr style="border: 1px solid #CCC;width:50%; text-align: center">
+                <td >
+                    <a href="{{ score.image.url }}">
+                        {{ score.exam_time.year }} year {{ score.exam_time.month }} month exam score
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    {% else %}
+        <p>no score</p>
+    {% endif %}
+</table>
+</div>
+
+
+
+</body>
+</html>

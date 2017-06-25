@@ -1,0 +1,8 @@
+.box{margin-top:50px; width:100%; height:100%; text-align: center}
+.box p, h1{width:50%; height:44px; margin:5px auto}
+.box h1{height:78px}
+.btn_sumbit{width:21%; margin:auto; font-family:'微软雅黑'}
+.btn_sumbit:hover{background-color: azure; color:inherit}
+
+.score_content{ width:25% }
+.score_content a{width:250%; text-align:center;vertical-align:middle; text-decoration: none;font-size: 18px;}
